@@ -2768,9 +2768,44 @@
         "id": "bold_highlight_color",
         "label": "Bold Highlight Color",
         "default": "#ed145b"
+      },
+      {
+        "type": "header",
+        "content": "Heading underline"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_heading_underline",
+        "label": "Enable heading underline",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "heading_underline_color",
+        "label": "Heading underline color",
+        "default": "#c62232"
+      },
+      {
+        "type": "range",
+        "id": "heading_underline_thickness",
+        "min": 1,
+        "max": 8,
+        "step": 1,
+        "unit": "px",
+        "label": "Heading underline thickness",
+        "default": 2
+      },
+      {
+        "type": "range",
+        "id": "heading_underline_spacing",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Heading underline spacing",
+        "default": 10
       }
     ]
   }
 ]
-
 
