@@ -478,6 +478,7 @@
         "banner_DPRtpq": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/6.jpg",
             "title": "SHOP ALL",
             "text": "Explore our full collection of premium silicone figures, from classic designs to exclusive styles, and find your perfect match.",
             "color": "#ffffff",
@@ -490,6 +491,7 @@
         "banner_mgd3fh": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/21.jpg",
             "title": "BEST SELLERS",
             "text": "Customer-loved top picks",
             "color": "#ffffff",
@@ -502,6 +504,7 @@
         "banner_XTpaqU": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/9.jpg",
             "title": "NEW IN",
             "text": "Fresh arrivals just landed.",
             "color": "#ffffff",
@@ -514,6 +517,7 @@
         "banner_yzXDeh": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/10.jpg",
             "title": "CUSTOM DOLLS",
             "text": "Create your unique piece.",
             "color": "#ffffff",
