@@ -444,13 +444,19 @@
           <div class="m-header__top">
             <div class="m-header__container {{ container }}">
               <div class="m-header__inner">
-                <div class="m-header__left m:w-4/12">
+                <div class="m-header__left m-header__left--logo-2l">
                   {% render 'header-logo', header_settings: section.settings %}
                 </div>
-                <div class="m-header__right m:w-8/12">
+                <div class="m-header__center m-header__center--search-2l">
+                  {% render 'header-option-item__search',
+                    header_settings: section.settings,
+                    icon_left: true,
+                    search_display_override: 'show_full',
+                    box_size: 'm-header__search--logo-left-2l'
+                  %}
+                </div>
+                <div class="m-header__right m-header__right--icons-2l">
                   {% liquid
-                    render 'header-option-item__search', header_settings: section.settings
-
                     if show_language_switcher
                       render 'language-switcher', box_size: 'm:hidden xl:m:block'
                     endif
@@ -485,7 +491,7 @@
           </div>
           <div class="m-header__main m-menu-bar m-gradient m-color-{{ section.settings.color_scheme_menu }}">
             <div class="m-header__container {{ container }}">
-              {% render 'header-main-menu-container', section: section %}
+              {% render 'header-main-menu-container', section: section, custom_classes: 'm:justify-center' %}
             </div>
           </div>
       {% endcase %}

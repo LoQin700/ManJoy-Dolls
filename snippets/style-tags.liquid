@@ -202,6 +202,18 @@
 <noscript>{{ 'custom.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+  {%- if settings.enable_heading_underline -%}
+    .m-section__heading,
+    .m-section__header h2,
+    .section-header__title,
+    .title {
+      display: inline-block;
+      border-bottom: {{ settings.heading_underline_thickness }}px solid {{ settings.heading_underline_color }};
+      padding-bottom: 0;
+      line-height: 1.1;
+      margin-bottom: {{ settings.heading_underline_spacing }}px;
+    }
+  {%- endif -%}
   {%- if custom_css != blank -%}
     {{ custom_css | strip_newlines }}
   {%- endif -%}

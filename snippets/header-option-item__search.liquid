@@ -2,6 +2,10 @@
   assign search_display = header_settings.search
   assign main_class = 'm-header__search'
 
+  if search_display_override != blank and search_display != 'hide'
+    assign search_display = search_display_override
+  endif
+
   if icon_left == true
     assign main_class = main_class | append: ' m-search-form--icon-left'
   endif
