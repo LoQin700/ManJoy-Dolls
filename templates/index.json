@@ -394,26 +394,52 @@
         "custom_class": ""
       }
     },
-    "custom_content_anbrjr": {
+    "custom_content_wDm3jw": {
       "type": "custom-content",
       "blocks": {
-        "image_4LyEDz": {
-          "type": "image",
+        "image_card_HFyiBJ": {
+          "type": "image_card",
           "settings": {
-            "link": "shopify://collections/new-arrivals",
             "width": "50%",
-            "alignment": "center",
+            "color_scheme": "",
+            "content_position": "bottom_left",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/4.png",
+            "link": "shopify://pages/faq",
+            "title": "FAQS",
+            "subtitle": "",
+            "description": "",
+            "button_label": "LEARN MORE",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
             "block_custom_class": "",
             "animations": "inherit",
             "enable_preload_image": false
           }
         },
-        "image_WnqLEx": {
-          "type": "image",
+        "image_card_Xnteni": {
+          "type": "image_card",
           "settings": {
-            "link": "shopify://collections/best-sellers",
             "width": "50%",
-            "alignment": "center",
+            "color_scheme": "",
+            "content_position": "bottom_right",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/34.jpg",
+            "link": "shopify://policies/shipping-policy",
+            "title": "SHIPPING POLICY",
+            "subtitle": "",
+            "description": "",
+            "button_label": "LEARN MORE",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
             "block_custom_class": "",
             "animations": "inherit",
             "enable_preload_image": false
@@ -421,15 +447,15 @@
         }
       },
       "block_order": [
-        "image_4LyEDz",
-        "image_WnqLEx"
+        "image_card_HFyiBJ",
+        "image_card_Xnteni"
       ],
       "name": "Custom content",
       "settings": {
-        "heading": "MOST LOVED",
+        "heading": "HELP & INFORMATION",
         "heading_size": "h3",
         "subheading": "",
-        "description": "Browse our fan-favorite picks and newest silicone figures, and find the perfect piece that aligns with your personal tastes and desires.",
+        "description": "Have questions? Check our FAQS below or review our SHIPPING POLICY for delivery details.",
         "header_alignment": "center",
         "container": "container-fluid",
         "color_scheme": "",
@@ -1035,7 +1061,7 @@
     "16225125199f82d8fe",
     "icon_box_GteqJL",
     "custom_content_7DTjzJ",
-    "custom_content_anbrjr",
+    "custom_content_wDm3jw",
     "custom_grid_banners_g3zxVX",
     "blog_posts_NJjQWp",
     "featured_collection_QByPka",
