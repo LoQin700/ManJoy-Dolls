@@ -588,7 +588,7 @@
       "name": "Custom Bordered RTE",
       "settings": {
         "container_type": "boxed",
-        "title": "REALISTIC SEX DOLLS | BEST TPE & SILICONE SEX DOLLS",
+        "title": "MANJOY DOLLS | PREMIUM LIFELIKE MALE SILICONE DOLLS",
         "title_size": 32,
         "content": "<p>We specialize in <strong>premium lifelike male silicone adult dolls</strong> crafted with <strong>high-quality safe silicone & TPE material</strong>. Our realistic male dolls feature <strong>exquisite body details</strong>, <strong>skin-friendly texture</strong> and <strong>customizable height/outfit options</strong>. Designed for personal private use, all items comply with <strong>EU & US adult product safety standards</strong>, <strong>discreet confidential packaging</strong> with <strong>worldwide shipping</strong> across US, UK, Germany, France and most European & North American countries. <strong>Strict privacy protection</strong> for every customer’s order.   </p>",
         "content_size": 16,
@@ -610,14 +610,7 @@
         "image_x48Qmp": {
           "type": "image",
           "settings": {
-            "image_by_url": "",
-            "image_link": "",
-            "max_width": "300px"
-          }
-        },
-        "image_zYL7eq": {
-          "type": "image",
-          "settings": {
+            "image": "shopify://shop_images/1.jpg",
             "image_by_url": "",
             "image_link": "",
             "max_width": "300px"
@@ -626,6 +619,7 @@
         "image_Vhg7cJ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/4.jpg",
             "image_by_url": "",
             "image_link": "",
             "max_width": "300px"
@@ -634,6 +628,7 @@
         "image_eDgjWm": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/5_9d842203-358a-4ae3-bc7a-8ab89297a9ab.jpg",
             "image_by_url": "",
             "image_link": "",
             "max_width": "300px"
@@ -642,6 +637,7 @@
         "image_w8tHAd": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/13.jpg",
             "image_by_url": "",
             "image_link": "",
             "max_width": "300px"
@@ -650,6 +646,16 @@
         "image_mjm7TA": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/12_b8dbd170-0d2c-4ead-8c89-fb6d53188173.jpg",
+            "image_by_url": "",
+            "image_link": "",
+            "max_width": "300px"
+          }
+        },
+        "image_zYL7eq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/12_9ede4433-c380-47a7-b2ec-280316284c82.jpg",
             "image_by_url": "",
             "image_link": "",
             "max_width": "300px"
@@ -658,6 +664,7 @@
         "image_HBwC3C": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/6_e73dfd44-8db6-437d-a898-9cfad4525c95.jpg",
             "image_by_url": "",
             "image_link": "",
             "max_width": "300px"
@@ -666,11 +673,11 @@
       },
       "block_order": [
         "image_x48Qmp",
-        "image_zYL7eq",
         "image_Vhg7cJ",
         "image_eDgjWm",
         "image_w8tHAd",
         "image_mjm7TA",
+        "image_zYL7eq",
         "image_HBwC3C"
       ],
       "name": "Brands list",
