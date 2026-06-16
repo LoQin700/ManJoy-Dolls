@@ -200,22 +200,35 @@
 <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'custom-style.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'custom.css' | asset_url | stylesheet_tag }}</noscript>
+<link rel="stylesheet" href="{{ 'manjoy-v2.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'manjoy-v2.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-  {%- if settings.enable_heading_underline -%}
-    .m-section__heading,
-    .m-section__header h2,
-    .section-header__title,
-    .title {
-      display: inline-block;
-      border-bottom: {{ settings.heading_underline_thickness }}px solid {{ settings.heading_underline_color }};
-      padding-bottom: 0;
-      line-height: 1.1;
-      margin-bottom: {{ settings.heading_underline_spacing }}px;
-    }
-  {%- endif -%}
   {%- if custom_css != blank -%}
     {{ custom_css | strip_newlines }}
+  {%- endif -%}
+  {%- if settings.enable_heading_underline -%}
+    body .m-section__header h2,
+    body .m-section__heading,
+    body .section-header__title,
+    body .m-section__header .title {
+      display: inline-block !important;
+      border-bottom: {{ settings.heading_underline_thickness }}px solid {{ settings.heading_underline_color }} !important;
+      padding-bottom: 0 !important;
+      line-height: 1.1 !important;
+      margin-bottom: {{ settings.heading_underline_spacing }}px !important;
+    }
+  {%- else -%}
+    body .m-section__header h2,
+    body .m-section__heading,
+    body .section-header__title,
+    body .m-section__header .title {
+      display: revert !important;
+      border-bottom: 0 !important;
+      padding-bottom: revert !important;
+      line-height: revert !important;
+      margin-bottom: revert !important;
+    }
   {%- endif -%}
 {%- endstyle -%}
 
@@ -225,3 +238,4 @@
 
 {% comment %} For init Product list of Recently product, Foxkit Related, Product recommendation {% endcomment %}
 <script src="{{ 'product-list.js' | asset_url }}" defer="defer"></script>
+
