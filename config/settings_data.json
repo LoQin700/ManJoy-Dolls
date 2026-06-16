@@ -79,7 +79,7 @@
     "review_app": "judge",
     "enable_bold_highlight": true,
     "enable_heading_underline": true,
-    "heading_underline_color": "#c62232",
+    "heading_underline_color": "#ED145B",
     "heading_underline_thickness": 2,
     "heading_underline_spacing": 10,
     "enable_page_transition": true,
