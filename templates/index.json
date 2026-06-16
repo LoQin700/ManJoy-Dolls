@@ -320,23 +320,49 @@
     "custom_content_7DTjzJ": {
       "type": "custom-content",
       "blocks": {
-        "image_nCQzAt": {
-          "type": "image",
+        "image_card_hz3Y9n": {
+          "type": "image_card",
           "settings": {
-            "link": "shopify://pages/payment-methods",
             "width": "50%",
-            "alignment": "center",
+            "color_scheme": "",
+            "content_position": "bottom_left",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/11.jpg",
+            "link": "shopify://pages/faq",
+            "title": "FAQS",
+            "subtitle": "",
+            "description": "",
+            "button_label": "LEARN MORE",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
             "block_custom_class": "",
             "animations": "inherit",
             "enable_preload_image": false
           }
         },
-        "image_x7GeBy": {
-          "type": "image",
+        "image_card_eqfhzG": {
+          "type": "image_card",
           "settings": {
-            "link": "shopify://pages/shipping-policy",
             "width": "50%",
-            "alignment": "center",
+            "color_scheme": "",
+            "content_position": "bottom_right",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/32.jpg",
+            "link": "shopify://policies/shipping-policy",
+            "title": "SHIPPING POLICY",
+            "subtitle": "",
+            "description": "",
+            "button_label": "LEARN MORE",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "button_fixed": false,
+            "use_content_above": false,
             "block_custom_class": "",
             "animations": "inherit",
             "enable_preload_image": false
@@ -344,8 +370,8 @@
         }
       },
       "block_order": [
-        "image_nCQzAt",
-        "image_x7GeBy"
+        "image_card_hz3Y9n",
+        "image_card_eqfhzG"
       ],
       "name": "Custom content",
       "settings": {
