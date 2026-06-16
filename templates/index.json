@@ -394,84 +394,6 @@
         "custom_class": ""
       }
     },
-    "custom_content_wDm3jw": {
-      "type": "custom-content",
-      "blocks": {
-        "image_card_HFyiBJ": {
-          "type": "image_card",
-          "settings": {
-            "width": "50%",
-            "color_scheme": "",
-            "content_position": "bottom_left",
-            "content_alignment": "center",
-            "text_size": "medium",
-            "text_color": "white",
-            "image": "shopify://shop_images/29.jpg",
-            "link": "shopify://collections/new-arrivals",
-            "title": "New Arrivals",
-            "subtitle": "",
-            "description": "",
-            "button_label": "LEARN MORE",
-            "button_style": "m-button--primary",
-            "button_size": "",
-            "button_fixed": false,
-            "use_content_above": false,
-            "block_custom_class": "",
-            "animations": "inherit",
-            "enable_preload_image": false
-          }
-        },
-        "image_card_Xnteni": {
-          "type": "image_card",
-          "settings": {
-            "width": "50%",
-            "color_scheme": "",
-            "content_position": "bottom_left",
-            "content_alignment": "center",
-            "text_size": "medium",
-            "text_color": "white",
-            "image": "shopify://shop_images/8.jpg",
-            "link": "shopify://policies/shipping-policy",
-            "title": "SHIPPING POLICY",
-            "subtitle": "",
-            "description": "",
-            "button_label": "LEARN MORE",
-            "button_style": "m-button--primary",
-            "button_size": "",
-            "button_fixed": false,
-            "use_content_above": false,
-            "block_custom_class": "",
-            "animations": "inherit",
-            "enable_preload_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_card_HFyiBJ",
-        "image_card_Xnteni"
-      ],
-      "disabled": true,
-      "name": "Custom content",
-      "settings": {
-        "heading": "HELP & INFORMATION",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "Have questions? Check our FAQS below or review our SHIPPING POLICY for delivery details.",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "color_scheme": "",
-        "content_color_scheme": "",
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
-        "gap": 30,
-        "gap_mobile": 16,
-        "use_scroll_mobile": false,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "enable_preload_image": false,
-        "custom_class": ""
-      }
-    },
     "custom_grid_banners_g3zxVX": {
       "type": "custom-grid-banners",
       "blocks": {
@@ -480,7 +402,7 @@
           "settings": {
             "image": "shopify://shop_images/6.jpg",
             "title": "SHOP ALL",
-            "text": "Explore our full collection of premium silicone figures, from classic designs to exclusive styles, and find your perfect match.",
+            "text": "Explore our complete collection of premium lifelike figures.",
             "color": "#ffffff",
             "link": "shopify://collections/all",
             "width": "6",
@@ -493,9 +415,9 @@
           "settings": {
             "image": "shopify://shop_images/21.jpg",
             "title": "BEST SELLERS",
-            "text": "Customer-loved top picks",
+            "text": "Our most loved pieces.",
             "color": "#ffffff",
-            "link": "",
+            "link": "shopify://collections/best-sellers",
             "width": "6",
             "row_span": "1",
             "text_pos": "br"
@@ -508,7 +430,7 @@
             "title": "NEW IN",
             "text": "Fresh arrivals just landed.",
             "color": "#ffffff",
-            "link": "",
+            "link": "shopify://collections/new-arrivals",
             "width": "6",
             "row_span": "1",
             "text_pos": "mc"
@@ -519,9 +441,9 @@
           "settings": {
             "image": "shopify://shop_images/10.jpg",
             "title": "CUSTOM DOLLS",
-            "text": "Create your unique piece.",
+            "text": "Design your bespoke companion with elite personalization.",
             "color": "#ffffff",
-            "link": "",
+            "link": "shopify://collections/custom-doll",
             "width": "12",
             "row_span": "1",
             "text_pos": "mr"
@@ -1053,7 +975,6 @@
     "16225125199f82d8fe",
     "icon_box_GteqJL",
     "custom_content_7DTjzJ",
-    "custom_content_wDm3jw",
     "custom_grid_banners_g3zxVX",
     "blog_posts_NJjQWp",
     "featured_collection_QByPka",
