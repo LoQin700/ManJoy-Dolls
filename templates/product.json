@@ -1,1 +1,291 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb","settings":{"container":"container","text_alignment":"center","hide_current":false,"hide_on_mb":false,"animations":"inherit"}},"main":{"type":"main-product","blocks":{"inventory_status_qfGfUw":{"type":"inventory_status","settings":{"show_indicator_bar":true,"normal_text":"","low_text":"<p>- Hurry! Limited stock left.<\/p>","outofstock_text":"","backordered_text":"<p>Backordered<\/p>"}},"title":{"type":"title","settings":{"title_font_size":28}},"price":{"type":"price","settings":{"show_saving":false,"sale_badge_type":"percentage"}},"icon_with_text_list_tbAXmd":{"type":"icon_with_text_list","settings":{"layout_direction":"column","items_gap":12,"icon_style":"material-icons-outlined","icon_color":"#ed145b","icon_size":24,"text_color":"#ed145b","text_size":19,"margin_top":16,"margin_bottom":10,"text_1":"Top Sellers","icon_1":"military_tech","text_2":"Shipping Protect","icon_2":"verified_user","text_3":"TDF Verified","icon_3":"loyalty","text_4":"Best Deal","icon_4":"inventory_2","text_5":"","icon_5":"","text_6":"","icon_6":""}},"variant_picker":{"type":"variant_picker","settings":{"size_title":"Size"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_quantity_selector":true,"show_atc_button":true,"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"visitors_YFKHzg":{"type":"visitors","settings":{"color_scheme":"","live_views_text":"{count_number} people are viewing this right now","live_views_range":"20-30","live_view_duration":"10","live_view_icon_blinks":true}},"collapsible_tab_gHE8nJ":{"type":"collapsible_tab","settings":{"icon_name":"sell","heading":"100% Authentic Products","content":"<p>All branded products you buy on our website are 100% genuine and original. No replicas, fakes, or knockoffs here!<br\/>As an official authorized distributor, we cooperate with more than 30 premium product manufacturers, such as WM, SE, Starpery, Irontech, Zelex, etc. Some manufacturers may not provide certificates, but you can track all orders from the original manufacturer via mail with the order number.<br\/><\/p>","liquid":"","default_open":false}},"collapsible_tab_qgrN4X":{"type":"collapsible_tab","settings":{"icon_name":"currency_exchange","heading":"Money-back Guarantee","content":"<ul><li>All products here are 100% authentic.<\/li><li>Our customized products are made to your specific requirements to ensure they fully meet your needs and expectations.<\/li><li>All products will be delivered in brand new and perfect original condition as described\/shown on the website. All our products have been rigorously inspected and tested to ensure they are in perfect condition and function properly.<\/li><li>We offer a full money-back guarantee on every order. Our team is always here to assist you and we do our absolute best to ensure customer satisfaction.<\/li><\/ul><p>For more details, visit our <a href=\"\/pages\/return-refund-policy\" target=\"_blank\" title=\"Return & Refund Policy\">money-back guarantee page.<\/a><\/p>","liquid":"","default_open":false}},"collapsible_tab_jbzFm4":{"type":"collapsible_tab","settings":{"icon_name":"shield","heading":"Secure Payment Methods","content":"<p>Making payments on our website is 100% secure. We employ the latest encryption technologies and undergo regular security audits to ensure all payment transactions are safe and secure. You can pay with the following payment methods:<br\/><\/p><ul><li>PayPal\/PayPal invoice<\/li><li>Credit Card (Can be paid by clicking PayPal, no PayPal registration required)<\/li><li>Klarna (US only. Buy now, pay later)<\/li><li>Money Order (US only. Simple and safe)<\/li><li>Layaway Plan (Pay $200 as a deposit, pay in full within 90 days)<\/li><\/ul><p>Visit our <a href=\"\/pages\/payment-methods\" target=\"_blank\" title=\"PAYMENT METHODS\">payments page<\/a> for more information.<\/p>","liquid":"","default_open":false}},"collapsible_tab_WNdz4J":{"type":"collapsible_tab","settings":{"icon_name":"local_shipping","heading":"Production & Shipping","content":"<p>All our products include free shipping and are delivered in discreet packaging. Unfortunately, we cannot ship to countries that have strict regulations on these products. Find out which countries allow or restrict these products.<br\/><\/p><ul><li>In-stock products are typically shipped within 2-5 business days of purchase.<\/li><li>For custom-made products, production takes approximately 3-4 weeks, followed by delivery within 1-2 weeks.<\/li><\/ul><p>You will receive a tracking number about 2 days after shipment. Shipping times vary depending on your location. Processing and delivery may be delayed during holidays (New Year, Christmas, National Day, Spring Festival, etc.)—please contact us for an estimated timeline.<br\/>Visit our<a href=\"\/pages\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\"> shipping and delivery page<\/a> for more information.<\/p>","liquid":"","default_open":false}},"collapsible_tab_Q6M3TP":{"type":"collapsible_tab","settings":{"icon_name":"volunteer_activism","heading":"What Will Come With Your Doll?","content":"<p>The model shown in product photos is styled with accessories for display purposes. Products may differ from the photos if you select a custom configuration. Most of our products include the following accessories (varies by brand):<br\/><\/p><ul><li>Blanket x1<\/li><li>Cleaning kit x1<\/li><li>Instruction manual x1<\/li><li>Comb x1<\/li><li>Free wig x1<\/li><li>Random free lingerie x1 (style may differ from photos)<\/li><\/ul>","liquid":"","default_open":false}},"trust_badge_NyBMd4":{"type":"trust_badge","settings":{"trust_badges_text":"<p>Guarantee safe & secure checkout<\/p>","trust_badges_image":"shopify:\/\/shop_images\/20260205175254_654_23.png","trust_badges_image_width":"80%","position":"below"}}},"block_order":["inventory_status_qfGfUw","title","price","icon_with_text_list_tbAXmd","variant_picker","buy_buttons","visitors_YFKHzg","collapsible_tab_gHE8nJ","collapsible_tab_qgrN4X","collapsible_tab_jbzFm4","collapsible_tab_WNdz4J","collapsible_tab_Q6M3TP","trust_badge_NyBMd4"],"settings":{"container":"container","layout":"layout-4","show_atwl":false,"enable_history_state":true,"enable_variant_group_images":false,"disable_selected_variant_default":false,"show_featured_media":true,"show_zoom_button":true,"enable_video_autoplay":true,"show_nav_media_mobile":true,"show_pagination_mobile":false,"use_sticky_atc":true,"use_sticky_atc_on_mobile":true,"enable_dynamic_checkout":true,"sticky_atc_wishtlist":false,"sticky_atc_compare":false}},"product-details-tabs":{"type":"product-details-tabs","blocks":{"description":{"type":"description","settings":{"header":"Product description"}},"tab":{"type":"tab","settings":{"header":"Shipping  Policy","content":"","content_page":"shipping-policy"}},"reviews_Q3JRBc":{"type":"reviews","settings":{"header":"Product reviews","container":"container","custom_liquid":"<!-- Start of Judge.me code -->{% assign has_legacy = false %}{% if product.metafields.judgeme.widget.size > 20 %}{% assign has_legacy = true %}{% endif %}<div style='clear:both'><\/div><div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-product-id='{{ product.id }}' data-widget='review' data-auto-install='false' data-shop-reviews-count='{{ shop.metafields.judgeme.shop_reviews_count | default: 0 | escape }}' data-entry-point='review_widget.js' data-entry-key='review-widget\/main.js'>{% if has_legacy %}<div class='jdgm-legacy-widget-content' style='display: none;'>{{ product.metafields.judgeme.widget }}<\/div>{% endif %}<\/div>{% if product.metafields.judgeme.review_widget_data %}<script>jdgm.data ||= {}; jdgm.data.reviewWidget ||= {}; jdgm.data.reviewWidget[{{ product.id }}] = {{ product.metafields.judgeme.review_widget_data }}<\/script>{% endif %}<!-- End of Judge.me code -->"}}},"block_order":["description","tab","reviews_Q3JRBc"],"custom_css":[],"settings":{"container":"container","color_scheme":"","default_open":true,"padding_top":0,"padding_bottom":50,"custom_class":"","animations":"inherit"}},"product-recommendations":{"type":"product-recommendations","settings":{"container":"container-fluid","color_scheme":"","remove_params":false,"heading":"You Might Also Like","heading_size":"h3","text_align":"center","limit":8,"columns":5,"column_gap":30,"enable_slider":true,"show_pagination":false,"show_navigation":true,"use_scroll_mobile":true,"padding_top":100,"padding_bottom":100,"custom_class":"","animations":"inherit"}},"recent-viewed-products":{"type":"recent-viewed-products","settings":{"container":"container-fluid","color_scheme":"","heading":"Recently Viewed Products","heading_size":"h3","text_align":"center","limit":8,"columns":5,"column_gap":30,"pcard_layout":"","pcard_image_ratio":"","show_vendor":false,"hide_title":false,"enable_slider":true,"show_pagination":false,"show_navigation":false,"mobile_disable_slider":false,"use_scroll_mobile":true,"item_gap_mobile":16,"padding_top":0,"padding_bottom":100,"custom_class":"","animations":"inherit"}}},"order":["breadcrumb","main","product-details-tabs","product-recommendations","recent-viewed-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "settings": {
+        "container": "container",
+        "text_alignment": "center",
+        "hide_current": false,
+        "hide_on_mb": false,
+        "animations": "inherit"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "inventory_status_qfGfUw": {
+          "type": "inventory_status",
+          "settings": {
+            "show_indicator_bar": true,
+            "normal_text": "",
+            "low_text": "<p>- Hurry! Limited stock left.</p>",
+            "outofstock_text": "",
+            "backordered_text": "<p>Backordered</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_font_size": 28
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_saving": false,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "icon_with_text_list_tbAXmd": {
+          "type": "icon_with_text_list",
+          "settings": {
+            "layout_direction": "column",
+            "items_gap": 12,
+            "icon_style": "material-icons-outlined",
+            "icon_color": "#ed145b",
+            "icon_size": 24,
+            "text_color": "#ed145b",
+            "text_size": 19,
+            "margin_top": 16,
+            "margin_bottom": 10,
+            "text_1": "Top Sellers",
+            "icon_1": "military_tech",
+            "text_2": "Shipping Protect",
+            "icon_2": "verified_user",
+            "text_3": "TDF Verified",
+            "icon_3": "loyalty",
+            "text_4": "Best Deal",
+            "icon_4": "inventory_2",
+            "text_5": "",
+            "icon_5": "",
+            "text_6": "",
+            "icon_6": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_title": "Size"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "visitors_YFKHzg": {
+          "type": "visitors",
+          "settings": {
+            "color_scheme": "",
+            "live_views_text": "{count_number} people are viewing this right now",
+            "live_views_range": "20-30",
+            "live_view_duration": "10",
+            "live_view_icon_blinks": true
+          }
+        },
+        "collapsible_tab_gHE8nJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon_name": "sell",
+            "heading": "100% Authentic Products",
+            "content": "<p><strong>ManJoy Dolls</strong> is an authorized global distributor cooperating with top-tier manufacturers including WM, SE, and Starpery. We guarantee every male companion is <strong>100% genuine and original</strong> directly from the official factory.</p>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "collapsible_tab_qgrN4X": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon_name": "currency_exchange",
+            "heading": "Money-back Guarantee",
+            "content": "<p>We stand behind our craftsmanship. Every order comes with a <strong>full money-back guarantee</strong>. Our specialized team strictly ensures your companion arrives in brand-new, flawless, and perfect original condition.</p>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "collapsible_tab_jbzFm4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon_name": "shield",
+            "heading": "Secure Payment Methods",
+            "content": "<p>our transactions are completely safe with us. We utilize advanced encryption technologies to offer <strong>100% secure payment methods</strong>, including Credit Cards, PayPal,</p>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "collapsible_tab_WNdz4J": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon_name": "local_shipping",
+            "heading": "Production & Shipping",
+            "content": "<p>We offer <strong>free worldwide shipping and 100% discreet packaging</strong> across the US, UK, and Europe. In-stock items ship within 2-5 business days, while premium custom orders take 3-4 weeks for precision crafting.</p>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "collapsible_tab_Q6M3TP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon_name": "volunteer_activism",
+            "heading": "What Will Come With Your Doll?",
+            "content": "<p>Your companion arrives fully equipped for immediate care. Most orders include a premium curated accessory kit: a dedicated <strong>blanket, cleaning kit, wig, random lingerie, comb, and official instruction manual</strong>.</p><ul><li>Blanket x1</li><li>Cleaning kit x1</li><li>Instruction manual x1</li><li>Comb x1</li><li>Free wig x1</li><li>Random free lingerie x1 (style may differ from photos)</li></ul>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "trust_badge_NyBMd4": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_badges_text": "<p>Guarantee safe & secure checkout</p>",
+            "trust_badges_image_width": "80%",
+            "position": "below"
+          }
+        }
+      },
+      "block_order": [
+        "inventory_status_qfGfUw",
+        "title",
+        "price",
+        "icon_with_text_list_tbAXmd",
+        "variant_picker",
+        "buy_buttons",
+        "visitors_YFKHzg",
+        "collapsible_tab_gHE8nJ",
+        "collapsible_tab_qgrN4X",
+        "collapsible_tab_jbzFm4",
+        "collapsible_tab_WNdz4J",
+        "collapsible_tab_Q6M3TP",
+        "trust_badge_NyBMd4"
+      ],
+      "settings": {
+        "container": "container",
+        "layout": "layout-4",
+        "show_atwl": false,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "disable_selected_variant_default": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": true,
+        "show_nav_media_mobile": true,
+        "show_pagination_mobile": false,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": true,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "header": "Product description"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Shipping  Policy",
+            "content": "",
+            "content_page": "shipping-policy"
+          }
+        },
+        "reviews_Q3JRBc": {
+          "type": "reviews",
+          "settings": {
+            "header": "Product reviews",
+            "container": "container",
+            "custom_liquid": "<!-- Start of Judge.me code -->{% assign has_legacy = false %}{% if product.metafields.judgeme.widget.size > 20 %}{% assign has_legacy = true %}{% endif %}<div style='clear:both'></div><div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-product-id='{{ product.id }}' data-widget='review' data-auto-install='false' data-shop-reviews-count='{{ shop.metafields.judgeme.shop_reviews_count | default: 0 | escape }}' data-entry-point='review_widget.js' data-entry-key='review-widget/main.js'>{% if has_legacy %}<div class='jdgm-legacy-widget-content' style='display: none;'>{{ product.metafields.judgeme.widget }}</div>{% endif %}</div>{% if product.metafields.judgeme.review_widget_data %}<script>jdgm.data ||= {}; jdgm.data.reviewWidget ||= {}; jdgm.data.reviewWidget[{{ product.id }}] = {{ product.metafields.judgeme.review_widget_data }}</script>{% endif %}<!-- End of Judge.me code -->"
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab",
+        "reviews_Q3JRBc"
+      ],
+      "custom_css": [],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "default_open": true,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "remove_params": false,
+        "heading": "You Might Also Like",
+        "heading_size": "h3",
+        "text_align": "center",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": 30,
+        "enable_slider": true,
+        "show_pagination": false,
+        "show_navigation": true,
+        "use_scroll_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "recent-viewed-products": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "Recently Viewed Products",
+        "heading_size": "h3",
+        "text_align": "center",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": true,
+        "show_pagination": false,
+        "show_navigation": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "product-details-tabs",
+    "product-recommendations",
+    "recent-viewed-products"
+  ]
+}
