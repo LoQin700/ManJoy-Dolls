@@ -407,8 +407,8 @@
             "text_size": "medium",
             "text_color": "white",
             "image": "shopify://shop_images/29.jpg",
-            "link": "shopify://pages/faq",
-            "title": "FAQS",
+            "link": "shopify://collections/new-arrivals",
+            "title": "New Arrivals",
             "subtitle": "",
             "description": "",
             "button_label": "LEARN MORE",
@@ -450,6 +450,7 @@
         "image_card_HFyiBJ",
         "image_card_Xnteni"
       ],
+      "disabled": true,
       "name": "Custom content",
       "settings": {
         "heading": "HELP & INFORMATION",
@@ -517,21 +518,9 @@
             "text": "Create your unique piece.",
             "color": "#ffffff",
             "link": "",
-            "width": "8",
+            "width": "12",
             "row_span": "1",
             "text_pos": "mr"
-          }
-        },
-        "banner_CQ7kw9": {
-          "type": "banner",
-          "settings": {
-            "title": "SALE",
-            "text": "Limited-time exclusive deals.",
-            "color": "#ffffff",
-            "link": "",
-            "width": "4",
-            "row_span": "1",
-            "text_pos": "mc"
           }
         }
       },
@@ -539,14 +528,13 @@
         "banner_DPRtpq",
         "banner_mgd3fh",
         "banner_XTpaqU",
-        "banner_yzXDeh",
-        "banner_CQ7kw9"
+        "banner_yzXDeh"
       ],
       "name": "Custom Grid Banners",
       "settings": {
         "container": "container-fluid",
         "color_scheme": "",
-        "heading": "SHOP BY CATEGORY",
+        "heading": "TRENDING & NEW ARRIVALS",
         "heading_size": "medium",
         "base_row_height": 250,
         "overlay_opacity": 0.1,
