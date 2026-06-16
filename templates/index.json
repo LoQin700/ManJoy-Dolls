@@ -375,10 +375,10 @@
       ],
       "name": "Custom content",
       "settings": {
-        "heading": "SAFE & SECURE SHOPPING",
+        "heading": "HELP & INFORMATION",
         "heading_size": "h3",
         "subheading": "",
-        "description": "Shop with complete confidence at YourDoll — we guarantee a safe, discreet, and seamless shopping experience for every order.",
+        "description": "Have questions? Check our FAQS below or review our SHIPPING POLICY for delivery details.",
         "header_alignment": "center",
         "container": "container-fluid",
         "color_scheme": "",
