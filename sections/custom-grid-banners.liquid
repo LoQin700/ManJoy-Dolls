@@ -1,0 +1,210 @@
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  
+  .grid-container-{{ section.id }} {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: {{ section.settings.base_row_height }}px;
+    gap: {{ section.settings.grid_gap }}px;
+    width: 100%;
+  }
+
+  .banner-item-{{ section.id }} {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .span-3 { grid-column: span 3; }
+  .span-4 { grid-column: span 4; }
+  .span-6 { grid-column: span 6; }
+  .span-8 { grid-column: span 8; }
+  .span-12 { grid-column: span 12; }
+
+  .row-1 { grid-row: span 1; }
+  .row-2 { grid-row: span 2; }
+  .row-3 { grid-row: span 3; }
+
+  .header-{{ section.id }} { text-align: center; margin-bottom: 30px; padding: 0 15px; }
+  .header-{{ section.id }} h2 {
+    display: inline-block;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 4px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .header-{{ section.id }} .h-med { font-size: 24px; font-weight: 600; }
+  .header-{{ section.id }} .h-large { font-size: 42px; font-weight: 700; }
+
+  .banner-img-static {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    transition: transform 0.6s ease;
+  }
+  .banner-item-{{ section.id }}:hover .banner-img-static { transform: scale(1.05); }
+  
+  .banner-content-{{ section.id }} {
+    position: relative;
+    z-index: 5;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgba(0,0,0, {{ section.settings.overlay_opacity }});
+  }
+
+  @media (max-width: 767px) {
+    .grid-container-{{ section.id }} { display: flex; flex-direction: column; }
+    .banner-item-{{ section.id }} { height: 250px !important; }
+    .header-{{ section.id }} .h-large { font-size: 28px; }
+  }
+{%- endstyle -%}
+
+<section class="section-{{ section.id }} color-{{ section.settings.color_scheme }} gradient">
+  <div class="{{ section.settings.container }}">
+    
+    {% if section.settings.heading != blank %}
+      <div class="header-{{ section.id }}">
+        <h2 class="{% if section.settings.heading_size == 'large' %}h-large{% else %}h-med{% endif %}">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+    {% endif %}
+
+    <div class="grid-container-{{ section.id }}">
+      {% for block in section.blocks %}
+        {%- capture align_styles -%}
+          {%- case block.settings.text_pos -%}
+            {%- when 'tl' -%}align-items: flex-start; justify-content: flex-start; text-align: left;
+            {%- when 'tc' -%}align-items: flex-start; justify-content: center; text-align: center;
+            {%- when 'tr' -%}align-items: flex-start; justify-content: flex-end; text-align: right;
+            {%- when 'ml' -%}align-items: center; justify-content: flex-start; text-align: left;
+            {%- when 'mc' -%}align-items: center; justify-content: center; text-align: center;
+            {%- when 'mr' -%}align-items: center; justify-content: flex-end; text-align: right;
+            {%- when 'bl' -%}align-items: flex-end; justify-content: flex-start; text-align: left;
+            {%- when 'bc' -%}align-items: flex-end; justify-content: center; text-align: center;
+            {%- when 'br' -%}align-items: flex-end; justify-content: flex-end; text-align: right;
+          {%- endcase -%}
+        {%- endcapture -%}
+
+        <a href="{{ block.settings.link }}" 
+           class="banner-item-{{ section.id }} span-{{ block.settings.width }} row-{{ block.settings.row_span }}" 
+           {{ block.shopify_attributes }}>
+          
+          {% if block.settings.image != blank %}
+            {%- comment -%}  center {%- endcomment -%}
+            {%- assign focal_point = block.settings.image.presentation.focal_point | default: 'center' -%}
+            {%- capture img_style -%}object-position: {{ focal_point }};{%- endcapture -%}
+            
+            {{ block.settings.image | image_url: width: 1200 | image_tag: class: 'banner-img-static', loading: 'lazy', style: img_style }}
+          {% else %}
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'banner-img-static' }}
+          {% endif %}
+          
+          <div class="banner-content-{{ section.id }}" style="{{ align_styles }}">
+            <div>
+              <h3 style="color: {{ block.settings.color }}; margin: 0; font-weight: 600;">{{ block.settings.title }}</h3>
+              {% if block.settings.text != blank %}
+                <p style="color: {{ block.settings.color }}; margin: 5px 0 0; opacity: 0.9; font-size: 0.9rem;">{{ block.settings.text }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Grid Banners Pro",
+  "settings": [
+    { 
+      "type": "select", 
+      "id": "container", 
+      "label": "Container type", 
+      "options": [
+        { "value": "container", "label": "Default" },
+        { "value": "container-fluid", "label": "Fluid container" },
+        { "value": "full-width", "label": "Full width" }
+      ],
+      "default": "container" 
+    },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "SHOP BY CATEGORY" },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading Size",
+      "options": [
+        { "value": "medium", "label": "Medium" },
+        { "value": "large", "label": "Large" }
+      ],
+      "default": "medium"
+    },
+    { "type": "range", "id": "base_row_height", "min": 100, "max": 500, "step": 10, "label": "Base Row Height (px)", "default": 250 },
+    { "type": "range", "id": "overlay_opacity", "min": 0, "max": 0.8, "step": 0.1, "label": "Image Darken", "default": 0.2 },
+    { "type": "range", "id": "grid_gap", "label": "Grid Gap", "default": 15, "min": 0, "max": 50, "step": 5, "unit": "px" },
+    { "type": "range", "id": "padding_top", "label": "Padding Top", "min": 0, "max": 100, "step": 5, "default": 40 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding Bottom", "min": 0, "max": 100, "step": 5, "default": 40 }
+  ],
+  "blocks": [
+    {
+      "name": "Banner",
+      "type": "banner",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Category" },
+        { "type": "text", "id": "text", "label": "Description" },
+        { "type": "color", "id": "color", "label": "Text Color", "default": "#ffffff" },
+        { "type": "url", "id": "link", "label": "Link" },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width Span",
+          "options": [
+            { "value": "3", "label": "25% (1/4)" },
+            { "value": "4", "label": "33% (1/3)" },
+            { "value": "6", "label": "50% (1/2)" },
+            { "value": "8", "label": "66% (2/3)" },
+            { "value": "12", "label": "100%" }
+          ],
+          "default": "4"
+        },
+        {
+          "type": "select",
+          "id": "row_span",
+          "label": "Height Span (Rows)",
+          "options": [
+            { "value": "1", "label": "1 Row" },
+            { "value": "2", "label": "2 Rows" },
+            { "value": "3", "label": "3 Rows" }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "select",
+          "id": "text_pos",
+          "label": "Text Alignment",
+          "options": [
+            { "value": "tl", "label": "Top Left" }, { "value": "tc", "label": "Top Center" }, { "value": "tr", "label": "Top Right" },
+            { "value": "ml", "label": "Middle Left" }, { "value": "mc", "label": "Middle Center" }, { "value": "mr", "label": "Middle Right" },
+            { "value": "bl", "label": "Bottom Left" }, { "value": "bc", "label": "Bottom Center" }, { "value": "br", "label": "Bottom Right" }
+          ],
+          "default": "mc"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Grid Banners Pro" }]
+}
+{% endschema %}

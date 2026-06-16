@@ -1,0 +1,237 @@
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.bg_color }};
+  }
+
+  .container-{{ section.id }} {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .container-default { max-width: 1200px; }
+  .container-full-width { max-width: 100%; }
+  .container-boxed { max-width: 1400px; }
+
+  .bordered-rte-wrapper {
+    border: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
+    padding: 50px 40px;
+    border-radius: {{ section.settings.border_radius }}px;
+    text-align: {{ section.settings.text_alignment }};
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bordered-rte-wrapper:hover {
+    border-color: {{ section.settings.border_color }};
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.07);
+    z-index: 2;
+  }
+
+  .bordered-rte-title {
+    margin-bottom: 25px;
+  }
+  .bordered-rte-title h2, .bordered-rte-title h1 {
+    margin: 0;
+    font-size: {{ section.settings.title_size }}px;
+    font-weight: 700;
+    color: {{ section.settings.text_color }};
+    text-transform: uppercase;
+  }
+
+  .bordered-rte-content {
+    font-size: {{ section.settings.content_size }}px;
+    line-height: 1.7;
+    color: {{ section.settings.text_color }};
+  }
+
+  @media screen and (max-width: 767px) {
+    .bordered-rte-wrapper {
+      padding: 30px 20px;
+    }
+    .bordered-rte-wrapper:hover {
+      transform: translateY(-2px);
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }} custom-bordered-rte">
+  <div class="container-{{ section.id }} container-{{ section.settings.container_type }}">
+    <div class="bordered-rte-wrapper">
+      {% if section.settings.title != blank %}
+        <div class="bordered-rte-title">
+          <h2 class="title">
+            <span>{{ section.settings.title }}</span>
+          </h2>
+        </div>
+      {% endif %}
+
+      <div class="bordered-rte-content rte">
+        {{ section.settings.content }}
+      </div>
+
+      {% if section.settings.button_label != blank %}
+        <div class="mt-4">
+          <a href="{{ section.settings.button_link }}" class="button button--primary">
+            {{ section.settings.button_label }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Bordered RTE",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container_type",
+      "label": "Container Type",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "full-width", "label": "Full Width" },
+        { "value": "boxed", "label": "Boxed" }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "REALISTIC SEX DOLLS | BEST TPE & SILICONE SEX DOLLS"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32,
+      "label": "Title Size"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Description",
+      "default": "<p><strong>YOURDOLL</strong> is the leading online shop...</p>"
+    },
+    {
+      "type": "range",
+      "id": "content_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "Content Size"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#eeeeee"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1,
+      "label": "Border Width"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8,
+      "label": "Border Radius"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60,
+      "label": "Padding Top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60,
+      "label": "Padding Bottom"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Bordered RTE"
+    }
+  ]
+}
+{% endschema %}

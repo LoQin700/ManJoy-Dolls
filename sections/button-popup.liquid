@@ -1,0 +1,241 @@
+<style>
+  .custom-popup-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.section_bg }};
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-wrapper-{{ section.id }} {
+    text-align: center;
+    width: 100%;
+    max-width: {{ section.settings.btn_max_width }}px;
+    padding: 0 20px;
+  }
+
+  .btn-{{ section.id }} {
+    background-color: {{ section.settings.btn_color }};
+    color: {{ section.settings.btn_text_color }};
+    width: 100%;
+    border-radius: {{ section.settings.btn_radius }}px;
+    padding-top: {{ section.settings.btn_padding_vertical }}px;
+    padding-bottom: {{ section.settings.btn_padding_vertical }}px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  .btn-{{ section.id }}:hover {
+    opacity: 0.8;
+  }
+
+  .modal-{{ section.id }} {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .overlay-{{ section.id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .content-{{ section.id }} {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 40px 30px;
+    width: 90%;
+    max-width: {{ section.settings.modal_max_width }}px;
+    position: relative;
+    z-index: 1000000;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+  }
+
+  .close-{{ section.id }} {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<section class="custom-popup-section-{{ section.id }}">
+  <div class="btn-wrapper-{{ section.id }}">
+    <button id="open-popup-{{ section.id }}" class="btn-{{ section.id }}">
+      {{ section.settings.button_label }}
+    </button>
+  </div>
+
+  <div id="modal-{{ section.id }}" class="modal-{{ section.id }}">
+    <div class="overlay-{{ section.id }}"></div>
+    <div class="content-{{ section.id }}">
+      <span class="close-{{ section.id }}">&times;</span>
+      <div class="rte">
+        {{ section.settings.popup_content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    const modal = document.getElementById("modal-{{ section.id }}");
+    const btn = document.getElementById("open-popup-{{ section.id }}");
+    const close = document.querySelector(".close-{{ section.id }}");
+    const overlay = document.querySelector(".overlay-{{ section.id }}");
+
+    if (btn && modal) {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.style.display = "block";
+        document.body.style.overflow = 'hidden';
+      });
+
+      const closeModal = () => {
+        modal.style.display = "none";
+        document.body.style.overflow = '';
+      };
+
+      close.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Button Popup Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "🔊 Buyers Must Read >>"
+    },
+    {
+      "type": "color",
+      "id": "btn_color",
+      "label": "Button Background",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "btn_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "btn_max_width",
+      "min": 200,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Button Area Max Width",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "btn_padding_vertical",
+      "min": 5,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Height (Vertical Padding)",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "btn_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Corner Radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Popup Settings"
+    },
+    {
+      "type": "richtext",
+      "id": "popup_content",
+      "label": "Popup Content",
+      "default": "<p>Add your store policy or guide here.</p>"
+    },
+    {
+      "type": "range",
+      "id": "modal_max_width",
+      "min": 300,
+      "max": 1200,
+      "step": 10,
+      "unit": "px",
+      "label": "Popup Max Width",
+      "default": 600
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "transparent"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Button Popup Section"
+    }
+  ]
+}
+{% endschema %}

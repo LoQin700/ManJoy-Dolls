@@ -1,0 +1,278 @@
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.bg_color }};
+  }
+
+  .title-wrapper-{{ section.id }} {
+    text-align: center;
+    margin-bottom: 60px; 
+  }
+  .title-wrapper-{{ section.id }} h2 {
+    margin: 0;
+    font-size: {{ section.settings.title_size }}px;
+    font-weight: 700;
+    color: {{ section.settings.text_color }};
+  }
+
+  .container-{{ section.id }} {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .container-default { max-width: 1200px; }
+  .container-full-width { max-width: 100%; }
+  .container-boxed { max-width: 1400px; }
+
+  
+  .info-box-grid-{{ section.id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+
+  .info-box-item-{{ section.id }} {
+    position: relative;
+    margin-top: 50px;
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(100% / {{ section.settings.columns_desktop }} - 30px);
+  }
+
+  .info-box-icon-wrap {
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+
+  .info-box-icon-inner {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #eeeeee; 
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+ 
+
+  .info-box-icon-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  
+  .info-box-content-bordered {
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    padding: 70px 25px 35px; 
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .info-box-item-{{ section.id }}:hover .info-box-content-bordered {
+    border-color: {{ section.settings.accent_color }};
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  }
+
+  .info-box-content-bordered h4 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: {{ section.settings.text_color }};
+  }
+
+  .info-box-content-bordered .rte {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .info-box-item-{{ section.id }} {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }} custom-info-carousel-wrapper">
+  <div class="container-{{ section.id }} container-{{ section.settings.container_type }}">
+    
+    {% if section.settings.title != blank %}
+      <div class="title-wrapper-{{ section.id }}">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="info-box-grid-{{ section.id }}">
+      {% for block in section.blocks %}
+        <div class="info-box-item-{{ section.id }}" {{ block.shopify_attributes }}>
+          
+          <div class="info-box-icon-wrap">
+            <div class="info-box-icon-inner">
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 200, height: 200 | image_tag: loading: 'lazy' }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="info-box-content-bordered">
+            <h4 class="title">{{ block.settings.heading }}</h4>
+            <div class="rte">
+              {{ block.settings.content }}
+            </div>
+            {% if block.settings.link_label != blank %}
+              <a href="{{ block.settings.link }}" class="link" style="color: {{ section.settings.accent_color }}; display: inline-block; margin-top: 15px; font-weight: 600;">
+                {{ block.settings.link_label }}
+              </a>
+            {% endif %}
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Info Carousel",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container_type",
+      "label": "Container Type",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "full-width", "label": "Full Width" },
+        { "value": "boxed", "label": "Boxed (1400px)" }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "WHY SHOULD YOU OWN A REALISTIC LOVE DOLL?"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 32,
+      "label": "Title Font Size"
+    },
+  
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Columns on Desktop"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60,
+      "label": "Padding Top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60,
+      "label": "Padding Bottom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "info_block",
+      "name": "Info Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Circle Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "FEELS LIKE A REAL HUMAN"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content Description",
+          "default": "<p>Share details about the charm, realism, and quality of your products here.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link Label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Info Carousel",
+      "blocks": [
+        { "type": "info_block" },
+        { "type": "info_block" },
+        { "type": "info_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}
