@@ -48,9 +48,9 @@
         "icon_with_text_list_tbAXmd": {
           "type": "icon_with_text_list",
           "settings": {
-            "layout_direction": "column",
+            "layout_direction": "row",
             "items_gap": 12,
-            "icon_style": "material-icons-outlined",
+            "icon_style": "material-icons",
             "icon_color": "#ed145b",
             "icon_size": 24,
             "text_color": "#ed145b",
