@@ -469,40 +469,6 @@
         "padding_bottom": 40
       }
     },
-    "blog_posts_NJjQWp": {
-      "type": "blog-posts",
-      "name": "Blog posts",
-      "settings": {
-        "heading": "LATEST BLOG POSTS",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "color_scheme": "",
-        "blog": "news",
-        "limit": 3,
-        "column": 3,
-        "column_gap": 30,
-        "mobile_gap": 10,
-        "article_image_aspect_ratio": "16/9",
-        "article_align_content": "text-left",
-        "article_show_tags": false,
-        "article_show_date": false,
-        "article_show_excerpt": false,
-        "article_show_button": true,
-        "show_button_on_header": false,
-        "button_link": "",
-        "button_text": "View More",
-        "button_style": "m-button--primary",
-        "button_size": "",
-        "use_scroll_mobile": true,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "custom_class": "",
-        "animations": "inherit"
-      }
-    },
     "featured_collection_qWzLGG": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -883,6 +849,40 @@
         "custom_class": ""
       }
     },
+    "blog_posts_NJjQWp": {
+      "type": "blog-posts",
+      "name": "Blog posts",
+      "settings": {
+        "heading": "LATEST BLOG POSTS",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "blog": "news",
+        "limit": 3,
+        "column": 3,
+        "column_gap": 30,
+        "mobile_gap": 10,
+        "article_image_aspect_ratio": "16/9",
+        "article_align_content": "text-left",
+        "article_show_tags": false,
+        "article_show_date": false,
+        "article_show_excerpt": false,
+        "article_show_button": true,
+        "show_button_on_header": false,
+        "button_link": "",
+        "button_text": "View More",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "use_scroll_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
     "custom_info_carousel_GgUrpr": {
       "type": "custom-info-carousel",
       "blocks": {
@@ -942,12 +942,12 @@
     "icon_box_GteqJL",
     "custom_content_7DTjzJ",
     "custom_grid_banners_g3zxVX",
-    "blog_posts_NJjQWp",
     "featured_collection_qWzLGG",
     "featured_collection_XQJWba",
     "custom_bordered_rte_VpVbGE",
     "brands_list_axfxNd",
     "testimonials_pnyUnX",
+    "blog_posts_NJjQWp",
     "collapsible_tabs_myAwmR",
     "custom_info_carousel_GgUrpr"
   ]

@@ -1,5 +1,7 @@
 {%- style -%}
   .section-{{ section.id }} {
+    --info-title-font-size: {{ section.settings.info_title_font_size }}px;
+    --info-text-font-size: {{ section.settings.info_text_font_size }}px;
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
     background-color: {{ section.settings.bg_color }};
@@ -7,12 +9,17 @@
 
   .title-wrapper-{{ section.id }} {
     text-align: center;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
   }
-  .title-wrapper-{{ section.id }} h2 {
+
+  .title-wrapper-{{ section.id }} .round-info-carousel__heading {
+    display: inline-block;
     margin: 0;
+    padding-bottom: 0;
+    border-bottom: {{ section.settings.heading_underline_thickness }}px solid {{ section.settings.heading_underline_color }};
     font-size: {{ section.settings.title_size }}px;
     font-weight: 700;
+    line-height: 1.1;
     color: {{ section.settings.text_color }};
   }
 
@@ -20,18 +27,25 @@
     margin: 0 auto;
     padding: 0 15px;
   }
-  .container-default { max-width: 1200px; }
-  .container-full-width { max-width: 100%; }
-  .container-boxed { max-width: 1400px; }
 
-  
+  .container-default {
+    max-width: 1200px;
+  }
+
+  .container-full-width {
+    max-width: 100%;
+  }
+
+  .container-boxed {
+    max-width: 1400px;
+  }
+
   .info-box-grid-{{ section.id }} {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
   }
-
 
   .info-box-item-{{ section.id }} {
     position: relative;
@@ -43,7 +57,7 @@
 
   .info-box-icon-wrap {
     position: absolute;
-    top: -50px; 
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -54,7 +68,7 @@
     height: 100px;
     background: #fff;
     border-radius: 50%;
-    border: 2px solid #eeeeee; 
+    border: 2px solid #eeeeee;
     padding: 5px;
     overflow: hidden;
     display: flex;
@@ -63,8 +77,6 @@
     transition: all 0.3s ease;
   }
 
- 
-
   .info-box-icon-inner img {
     width: 100%;
     height: 100%;
@@ -72,56 +84,79 @@
     border-radius: 50%;
   }
 
-  
   .info-box-content-bordered {
     border: 1px solid #eeeeee;
     background: #ffffff;
-    padding: 70px 25px 35px; 
+    padding: 70px 25px 35px;
     text-align: center;
     height: 100%;
     transition: all 0.3s ease;
   }
 
   .info-box-item-{{ section.id }}:hover .info-box-content-bordered {
-    border-color: {{ section.settings.accent_color }};
-    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    border-color: {{ section.settings.heading_underline_color }};
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
   }
 
-  .info-box-content-bordered h4 {
+  .info-box-content-bordered .round-info-carousel__block-title {
+    display: block;
     margin: 0 0 15px;
-    font-size: 18px;
+    padding: 0;
+    border: 0;
+    font-size: var(--info-title-font-size);
     font-weight: 600;
+    line-height: 1.35;
     color: {{ section.settings.text_color }};
   }
 
   .info-box-content-bordered .rte {
-    font-size: 14px;
+    font-size: var(--info-text-font-size);
     line-height: 1.6;
     color: #666;
   }
 
+  .info-box-content-bordered .round-info-carousel__link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: {{ section.settings.heading_underline_color }};
+  }
 
   @media screen and (max-width: 767px) {
+    .title-wrapper-{{ section.id }} {
+      margin-bottom: 44px;
+    }
+
+    .title-wrapper-{{ section.id }} .round-info-carousel__heading {
+      font-size: min({{ section.settings.title_size }}px, 28px);
+    }
+
     .info-box-item-{{ section.id }} {
       max-width: 100%;
       flex: 0 0 100%;
     }
+
+    .info-box-content-bordered .round-info-carousel__block-title {
+      font-size: min(var(--info-title-font-size), 18px);
+    }
+
+    .info-box-content-bordered .rte {
+      font-size: min(var(--info-text-font-size), 15px);
+    }
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }} custom-info-carousel-wrapper">
+<div class="section-{{ section.id }} custom-info-carousel-wrapper manjoy-round-info-carousel">
   <div class="container-{{ section.id }} container-{{ section.settings.container_type }}">
-    
     {% if section.settings.title != blank %}
       <div class="title-wrapper-{{ section.id }}">
-        <h2>{{ section.settings.title }}</h2>
+        <h2 class="round-info-carousel__heading">{{ section.settings.title }}</h2>
       </div>
     {% endif %}
 
     <div class="info-box-grid-{{ section.id }}">
       {% for block in section.blocks %}
         <div class="info-box-item-{{ section.id }}" {{ block.shopify_attributes }}>
-          
           <div class="info-box-icon-wrap">
             <div class="info-box-icon-inner">
               {% if block.settings.image != blank %}
@@ -133,36 +168,43 @@
           </div>
 
           <div class="info-box-content-bordered">
-            <h4 class="title">{{ block.settings.heading }}</h4>
+            <h4 class="round-info-carousel__block-title">{{ block.settings.heading }}</h4>
             <div class="rte">
               {{ block.settings.content }}
             </div>
             {% if block.settings.link_label != blank %}
-              <a href="{{ block.settings.link }}" class="link" style="color: {{ section.settings.accent_color }}; display: inline-block; margin-top: 15px; font-weight: 600;">
+              <a href="{{ block.settings.link }}" class="round-info-carousel__link">
                 {{ block.settings.link_label }}
               </a>
             {% endif %}
           </div>
-
         </div>
       {% endfor %}
     </div>
-
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "Custom Info Carousel",
+  "name": "Round Info Carousel",
   "settings": [
     {
       "type": "select",
       "id": "container_type",
       "label": "Container Type",
       "options": [
-        { "value": "default", "label": "Default" },
-        { "value": "full-width", "label": "Full Width" },
-        { "value": "boxed", "label": "Boxed (1400px)" }
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "boxed",
+          "label": "Boxed (1400px)"
+        }
       ],
       "default": "default"
     },
@@ -182,7 +224,42 @@
       "default": 32,
       "label": "Title Font Size"
     },
-  
+    {
+      "type": "color",
+      "id": "heading_underline_color",
+      "label": "Heading underline color",
+      "default": "#c62232"
+    },
+    {
+      "type": "range",
+      "id": "heading_underline_thickness",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "unit": "px",
+      "default": 2,
+      "label": "Heading underline thickness"
+    },
+    {
+      "type": "range",
+      "id": "info_title_font_size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18,
+      "label": "Info block title font size"
+    },
+    {
+      "type": "range",
+      "id": "info_text_font_size",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "Info block text font size"
+    },
     {
       "type": "color",
       "id": "text_color",
@@ -266,11 +343,17 @@
   ],
   "presets": [
     {
-      "name": "Custom Info Carousel",
+      "name": "Round Info Carousel",
       "blocks": [
-        { "type": "info_block" },
-        { "type": "info_block" },
-        { "type": "info_block" }
+        {
+          "type": "info_block"
+        },
+        {
+          "type": "info_block"
+        },
+        {
+          "type": "info_block"
+        }
       ]
     }
   ]
