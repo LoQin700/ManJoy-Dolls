@@ -17,7 +17,7 @@
       "settings": {
         "container": "container-fluid",
         "color_scheme": "dark",
-        "form_layout": "horizontal",
+        "form_layout": "vertical",
         "form_design": "1",
         "heading": "SUBSCRIBE AND GET DISCOUNT",
         "description": "<p>Subscribe to our newsletter for discounts, sales, and new silicone figure updates. </p>",
