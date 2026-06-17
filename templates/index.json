@@ -758,97 +758,6 @@
         "animations": "inherit"
       }
     },
-    "collapsible_tabs_myAwmR": {
-      "type": "collapsible-tabs",
-      "blocks": {
-        "item_ErFzcd": {
-          "type": "item",
-          "settings": {
-            "header": "Is the silicone figure safe for personal use?",
-            "text_size": "h5",
-            "content": "<p>Yes, our silicone figures are<strong> </strong>safe for personal use. We only use materials that are non-toxic and body-safe.</p>",
-            "content_page": "",
-            "open": false
-          }
-        },
-        "item_C48k9L": {
-          "type": "item",
-          "settings": {
-            "header": "Can I get a refund if I'm not satisfied with my purchase?",
-            "text_size": "h5",
-            "content": "<p>Absolutely YES! We offer a money-back guarantee to all of our customers.</p>",
-            "content_page": "",
-            "open": false
-          }
-        },
-        "item_7gi3yr": {
-          "type": "item",
-          "settings": {
-            "header": "How do I choose a silicone figure?",
-            "text_size": "h5",
-            "content": "<p>In our selection, there are more than 3,000 TPE silicone figures and silicone silicone figures. You can customize the silicone figure according to your preferences, select the skin tone, eye color, and hair, add lifelike features such as body heating and moaning, and more. You can choose custom silicone figures, or you can directly choose the in-stock silicone figures that have been already customized and stored in our USA and EU warehouses. We offer the best price guarantee for all our new silicone figures.</p>",
-            "content_page": "",
-            "open": false
-          }
-        },
-        "item_CtEMmC": {
-          "type": "item",
-          "settings": {
-            "header": "How long does it take to receive the silicone figure after placing an order?",
-            "text_size": "h5",
-            "content": "<p>Delivery time varies depending on the different silicone figures from different brands; usually, 3-4 weeks to make and 1-2 weeks to ship. We typically aim to deliver ASAP.</p>",
-            "content_page": "",
-            "open": false
-          }
-        },
-        "item_FekWBk": {
-          "type": "item",
-          "settings": {
-            "header": "Can I track my order status?",
-            "text_size": "h5",
-            "content": "<p>Yes, we provide order tracking information for all orders. You will receive a tracking number once your order is shipped.</p>",
-            "content_page": "",
-            "open": false
-          }
-        },
-        "item_EGEBiX": {
-          "type": "item",
-          "settings": {
-            "header": "EternaDoll Collection Introduction",
-            "text_size": "h5",
-            "content": "<p>EternaDoll is now selling TPE silicone figures and silicone silicone figures provided by the best brands and suppliers. We are a certified distributor of premium silicone figure brands. You can choose any style you want, and you will not be disappointed.<br/>We offer a huge selection of silicone figures of different price categories. We have these silicone figure categories ready for you:<br/></p><ul><li>Silicone figures by Age: Adult silicone figures, milf & mature silicone figures.</li><li>Silicone figures by Body Type: Life-size, torsos, small, mini, curvy, BBW, fitness, tiny, big boobs, fat & lifelike silicone figures.</li><li>Silicone figures by Race: Anime, blonde, celebrity, pornstars, black, Japanese & Asian silicone figures.</li><li>Silicone figures for Men & Women: Female, male silicone figures, gay, lesbian & shemale silicone figures.</li></ul>",
-            "content_page": "",
-            "open": false
-          }
-        }
-      },
-      "block_order": [
-        "item_ErFzcd",
-        "item_C48k9L",
-        "item_7gi3yr",
-        "item_CtEMmC",
-        "item_FekWBk",
-        "item_EGEBiX"
-      ],
-      "name": "Collapsible tabs",
-      "settings": {
-        "container": "container-fluid",
-        "color_scheme": "",
-        "image": "shopify://shop_images/5_9d842203-358a-4ae3-bc7a-8ab89297a9ab.png",
-        "image_position": "right",
-        "column_gap": 108,
-        "heading": "YOUR CONCERNS & OUR ANSWERS",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "left",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "enable_preload_image": false,
-        "animations": "inherit",
-        "custom_class": ""
-      }
-    },
     "blog_posts_NJjQWp": {
       "type": "blog-posts",
       "name": "Blog posts",
@@ -881,6 +790,86 @@
         "padding_bottom": 50,
         "custom_class": "",
         "animations": "inherit"
+      }
+    },
+    "collapsible_tabs_myAwmR": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "item_C48k9L": {
+          "type": "item",
+          "settings": {
+            "header": "Are ManJoy Dolls safe for sensitive skin and personal use?",
+            "text_size": "h5",
+            "content": "<p>Absolutely. Every collection at ManJoy Dolls is meticulously crafted using 100% medical-grade, platinum-cured silicone and high-density premium TPE. All materials are strictly non-toxic, hypoallergenic, and entirely scent-free, complying fully with both EU & US adult product safety standards to guarantee a velvety, skin-friendly texture that is completely safe for intimate use.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_7gi3yr": {
+          "type": "item",
+          "settings": {
+            "header": "What is your policy on quality assurance and returns?",
+            "text_size": "h5",
+            "content": "<p>Your investment is fully protected. We offer a solid money-back guarantee if your product arrives with any manufacturing defects or factory damage. Our dedicated quality inspection specialists manually open and rigorously check every female doll before dispatching to ensure her body structure, makeup, and skin are 100% flawless and perfect upon arrival.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_CtEMmC": {
+          "type": "item",
+          "settings": {
+            "header": "How do I select and fully customize my ideal female doll?",
+            "text_size": "h5",
+            "content": "<p>Through our premium collection, you have complete creative freedom. You can effortlessly browse by age aesthetics (such as young adult or mature milf models), body silhouettes (including life-size curves, fitness builds, or petite statues), and diverse facial styles. Our editor allows you to fully customize her height, skin tone, eye color, premium wig, and expressive makeup preference to perfectly bring your unique vision to life.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_FekWBk": {
+          "type": "item",
+          "settings": {
+            "header": "How long does production and shipping take for my order?",
+            "text_size": "h5",
+            "content": "<p>For our popular models already stored in our global warehouses, delivery takes just <strong>2-5 business days</strong>. For personalized bespoke orders requiring artisan crafting, the studio requires <strong>3-4 weeks for precision sculpting and meticulous curing</strong>. We partner with elite courier networks to provide <strong>free worldwide shipping and 100% tax-free delivery</strong> directly to your doorstep.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_EGEBiX": {
+          "type": "item",
+          "settings": {
+            "header": "Is the packaging discreet to guarantee absolute personal privacy?",
+            "text_size": "h5",
+            "content": "<p>Yes, <strong>100% absolute privacy is our highest commitment</strong>. Every female companion is shipped in a <strong>heavy-duty, completely plain brown box</strong> with zero brand logos, product descriptions, or revealing labels—looking exactly like standard furniture. Furthermore, our checkout is fully encrypted, ensuring <strong>no sensitive adult product keywords or brand names</strong> will ever appear on your bank statement.</p>",
+            "content_page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "item_C48k9L",
+        "item_7gi3yr",
+        "item_CtEMmC",
+        "item_FekWBk",
+        "item_EGEBiX"
+      ],
+      "name": "Collapsible tabs",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "image": "shopify://shop_images/5_9d842203-358a-4ae3-bc7a-8ab89297a9ab.png",
+        "image_position": "right",
+        "column_gap": 108,
+        "heading": "YOUR CONCERNS & OUR ANSWERS",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "enable_preload_image": false,
+        "animations": "inherit",
+        "custom_class": ""
       }
     },
     "custom_info_carousel_GgUrpr": {
