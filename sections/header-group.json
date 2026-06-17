@@ -26,7 +26,7 @@
             "show_stores_page": false,
             "show_track_order": true,
             "track_order_text": "Track Order",
-            "track_order_url": "https://d10jgy-kd.myshopify.com/apps/17TRACK",
+            "track_order_url": "",
             "sticky_topbar": true,
             "show_currency_switcher": false,
             "show_country_selector": false,
