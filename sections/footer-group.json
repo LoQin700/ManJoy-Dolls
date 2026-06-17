@@ -13,6 +13,9 @@
   "sections": {
     "newsletter_aFXdR9": {
       "type": "newsletter",
+      "custom_css": [
+        ".m-newsletter-section__header {margin-bottom: 16px; }"
+      ],
       "name": "Newsletter",
       "settings": {
         "container": "container-fluid",
